@@ -15,6 +15,9 @@
 #' 
 #' @concept rcellminerPubchem
 #' @export  
+
+library(simpleRCache)
+
 getPubchemFromNsc <- function(id, type="cid", debug=TRUE, cachePath=NULL) {
   if(is.null(cachePath)) {
     setCacheRootPath()
